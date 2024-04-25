@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: /hi-my-name-is.jpg
 # some information about your slides, markdown enabled
 title: Welcome to Slidev
 info: |
@@ -24,50 +24,25 @@ transition: slide-left
 mdc: true
 ---
 
-# Welcome to Slidev
+<div class="bg-gray-900 bg-opacity-30 p-2 rounded-md">
+  <h1 class="text-blue-200">Our name is what?</h1>
 
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
+  <h3 class="text-green-300">The Sim Slidies on P-names</h3>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+---
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
----
-transition: fade-out
----
+# Metodologi
 
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+- 📝 **Request For Information** - Ane forespurte teamnavn
+- 🧠 **Brainstorming** - Initielt med teamet og tok helt av alene
+- 📤 **Shaping** - Gruppering etter type navn og tilhørende beskrivelse/slogan
+- 🤖 **Name Retrospective** - Review av forslag, må ha mer beskrivelser og tydeligere kravspesifikasjon. Forslag om litt mer wildcards og lekenhet.
+- 🎉 **Name Review** - Presentasjon av forslag
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -95,543 +70,222 @@ transition: slide-up
 level: 2
 ---
 
-# Navigation
+# The Animals
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+Hvilket dyr kunne vi vært?
 
-## Keyboard Shortcuts
+<div class="grid grid-cols-3 gap-4 justify-center">
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
+<PictureCard 
   v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
+  title="Podengo" 
+  slogan="Brilliant's Best Friend"
+  tag="Loyalty"
+  image="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHNyamY3MjBubDlneGNrdjN3Z3kyaWNqaW02MmdrdjNwM3QxOHN6YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MT9dJhvWLo1CL8D74x/giphy.gif"
 />
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
----
-layout: two-cols
-layoutClass: gap-16
----
+<PictureCard 
+  v-click
+  title="Platypus" 
+  slogan="Unexpected Excellence"
+  description="It shouldn't work but it does."
+  tag="Versatility"
+  image="https://i.pinimg.com/originals/78/c8/85/78c885323c5db9435081804a57d49558.gif" 
+/>
 
-# Table of contents
+<PictureCard 
+  v-click
+  title="Porcupine" 
+  slogan="Small but Packs a Punch"
+  tag="Resiliience"
+  image="https://64.media.tumblr.com/ef7c65181d0506ba81c1553dc7d70280/tumblr_o7c3k02uCd1qfthy3o2_400.gif"
+/>
 
-You can use the `Toc` component to generate a table of contents for your slides:
+<PictureCard 
+  v-click
+  title="Pangolin" 
+  slogan="Upping the Scale"
+  tag="Adaptability"
+  image="https://i.pinimg.com/originals/93/ce/da/93cedadc3d7cdd2f5a57386b29b4650b.gif"
+/>
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+<PictureCard  
+  v-click
+  title="Panda" 
+  tag="Diligence" 
+  slogan="Keeper of the Forest of Ideas" 
+  image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/532ac8fa-5d42-4cd0-823a-13c07e3a7350/dfum52o-bc984501-a741-4402-8cd2-99bbd361317b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUzMmFjOGZhLTVkNDItNGNkMC04MjNhLTEzYzA3ZTNhNzM1MFwvZGZ1bTUyby1iYzk4NDUwMS1hNzQxLTQ0MDItOGNkMi05OWJiZDM2MTMxN2IuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gnf6zud7Z66_7nPGBZ5PYSreQmKA-5wmAXJsuhIXZBQ"
+/>
 
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+<PictureCard v-click title="Possum" image="https://j.gifs.com/VArv5O.gif" description="The (o)Possum stays in one area as long as there is food and water, and favor dark, secure areas. Can play possum to avoid uncomfortable situations." />
 
-::right::
-
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
+</div>
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: https://miro.medium.com/v2/resize:fit:1400/1*9uuSCTtam462aYwDSeQECg.jpeg
 ---
 
-# Code
+## Mythical Beasts
+<span class="text-4xl bg-gradient-to-r from-orange-600 via-yellow-500 to-red-400 bg-clip-text text-transparent">Phoenix</span>
 
-Use code snippets and get the highlighting directly, and even types hover![^1]
+<span class="bg-gradient-to-r from-yellow-600 via-cyan-500 to-green-400 bg-clip-text text-transparent">Trust the Cycle</span>
 
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
+<ul>
+  <li v-click>Embracing the cyclical nature of innovation</li>
+  <li v-click>Rising form the ashes of setbacks and failure</li>
+  <li v-click>Soaring high with unwavering confidence</li>
+</ul>
 
 ---
-level: 2
+layout: image-left
+image: https://oldworldgods.com/wp-content/uploads/2023/11/pegasus1.jpg
 ---
 
-# Shiki Magic Move
+## Mythical Beasts
+<span class="text-4xl! bg-gradient-to-r from-yellow-600 via-cyan-500 to-green-400 bg-clip-text text-transparent">Pegasus</span>
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+<span class="bg-gradient-to-r from-white via-cyan-500 to-blue-400 bg-clip-text text-transparent">Soaring towards the horizon</span>
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+<ul>
+  <li v-click>Keen eyes on difficult problems</li>
+  <li v-click>Facing obstacles with precision and foresight</li>
+  <li v-click>Challenges are opportunities for success</li>
+</ul>
 
-````md magic-move
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
+---
+layout: image-right
+image: https://qph.cf2.quoracdn.net/main-qimg-6e67a770e4e9948a1d1398da6ce0ed94
+---
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
+## Mythical Beasts
+<span class="text-4xl! bg-gradient-to-r from-green-300 via-green-500 to-green-700 bg-clip-text text-transparent">Pixie</span>
 
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
+<span class="bg-gradient-to-r from-teal-500 to-white bg-clip-text text-transparent">Playful Innovation</span>
 
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
+<ul>
+  <li v-click>Unconvential ideas are tomorrow's products</li>
+  <li v-click>A mischievous team spirit</li>
+  <li v-click>Challenging the status quo</li>
+</ul>
 
 ---
 
-# Components
+## Time for Gods
 
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn More](https://sli.dev/guide/animations#click-animations)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
+<div grid="~ cols-3 gap-2" m="t-2">
+  <div class="space-y-4" v-click>
+    <h1>Poseidon</h1>
+    <p>Braving the Storm</p>
+    <img border="rounded" class="aspect-video" src="https://cdn.thecollector.com/wp-content/uploads/2022/02/jean-antoine-theodore-gudin-shipping-storm.jpg?width=1400&quality=55" alt="">
+    <ul>
+      <li>Olympian God of the Sea</li>
+      <li>Exploring Unchartered Waters</li>
+      <li>Adaptating to Emerging Technologies</li>
+    </ul>
   </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
+  <div class="space-y-4" v-click>
+    <h1>Pele</h1>
+    <p>Crucible of Innovation</p>
+    <img border="rounded" class="aspect-video object-cover object-top" src="https://miro.medium.com/v2/resize:fit:1024/1*f-AQYbRsRlKnnWfSbUQTVQ@2x.jpeg" alt="">
+    <ul>
+      <li>Polynesian Goddess of Volcanoes</li>
+      <li>Creation and Destruction</li>
+      <li>Fueling the Pursuit of Excellence</li>
+    </ul>
+  </div>
+  <div class="space-y-4" v-click>
+    <h1>Pangu</h1>
+    <p>Forging Tomorrow</p>
+    <img border="rounded" class="aspect-video object-cover object-top" src="https://mythologysource.com/wp-content/uploads/2020/11/pangu.png" alt="">
+    <ul>
+      <li>Chinese God of Creation</li>
+      <li>Pushing the Boundaries of Possibility</li>
+      <li>Collaboration and Meticulous Craftmanship</li>
+    </ul>
   </div>
 </div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
+---
 
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
+# Exploring the Digital Frontier
 
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
+<div grid="~ cols-3 gap-4" m="t-20">
+  <div v-click class="rounded-md p-4 bg-lime-900">
+    <h3>Pioneer, Pathfinder</h3>
+    <p>Trailblazingly Fast</p>
+    <ul>
+      <li>Mapping Uncharted Territories and Uncovering Opportunities</li>
+      <li>Failing First so Others Wont</li>
+    </ul>
+  </div>
+  <div v-click class="rounded-md bg-green-900 p-4">
+    <h3>Pulse</h3>
+    <p>The Heartbeat of Fast-Paced Innovation.</p>
+    <ul>
+      <li>Staying Ahead of the Curve.</li>
+      <li>Rapid Response to Challenge and Opportunity.</li>
+    </ul>
+  </div>
+  <div v-click class="rounded-md p-4 bg-cyan-900">
+    <h3>Paradox</h3>
+    <p>The Balance between Tradition and Innovation.</p>
+    <ul>
+      <li>Pragmatic Perfection</li>
+      <li>Harmony in Contrast</li>
+      <li>Pushing the Boundaries of Unconvential Thinking</li>
+    </ul>
+  </div>
 </div>
 
 ---
 
-# LaTeX
+# Mindmap
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
+<div class="p-2 pt-0 -mt-4">
 ```mermaid
 mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+  id((🏷️ Name <br /> Suggestons))
+    (🐙 Animals)
+      Podengo
+      Platypus
+      Porcupine
+      Pangolin
+      Panda
+      Possum
+    (🐦‍🔥 Mythical Beasts)
+      Phoenix
+      Pegasus
+      Pixie
+    (🙏 Gods)
+      Poseidon
+      Pele
+      Pangu
+    (💭 Concepts)
+      Pioneer
+      Pathfinder
+      Pulse
+      Pathfinder
 ```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-foo: bar
-dragPos:
-  square: 691,33,167,_,-16
 ---
 
-# Draggable Elements
+# BONUS: Et Lynkurs i Nordmørsk
 
-Double-click on the draggable elements to edit their positions.
+AKA: Ordbok for å forstå meg bedre på mandag.
 
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <carbon:arrow-up />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="671,205,253,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+<div class="grid grid-cols-4 gap-4 w-full mt-6">
+  <WordCard word="Mjøk" translation="Melk" />
+  <Youtube id="62Xgnx0oy-Q" class="aspect-video w-full rounded-md" />
+  <WordCard word="Svåltinj/Svolta" translation="Sulten (hankjønn)/Sulten (hokjønn)" />
+  <WordCard word="Sykjå, Akjå, Nikjå" translation="17, 18, 19" />
+  <WordCard word="E tykkje ta e kjøle" translation="Jeg synes det er ugreit / forferdelig / urimelig /overdrevent / unødvendig" />
+  <WordCard word="Bakels å græt" translation="Vafler med smørgrøt fra Sunndal" />
+  <WordCard word="Hæmbakakak" translation="Hjemmebakt brød" />
+  <WordCard word="Kjøle klar" translation="Veldig sliten" />
+  <WordCard word="Farsk" translation="Ugagn. Feks. 'Guten e farskåt!'" />
+  <WordCard word="Ketta" translation="Kiler. 'Ikkje kett me!!!'" />
+  <WordCard word="Bleinkje" translation="Blinke. 'Sjå, den både bleinkje og skin!'" />
+  <Youtube id="lczN213021Y" class="aspect-video w-full rounded-md" />
+</div>

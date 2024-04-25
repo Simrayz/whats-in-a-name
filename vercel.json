@@ -1,5 +1,6 @@
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
-  "buildCommand": "pnpm build --remote=banana",
+  "buildCommand": "pnpm build",
+  "runCommand": "pnpm dev",
   "outputDirectory": "dist"
 }
