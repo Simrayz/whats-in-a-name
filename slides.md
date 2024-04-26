@@ -22,7 +22,6 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
-download: true
 ---
 
 <div class="bg-gray-900 bg-opacity-30 p-2 rounded-md">
