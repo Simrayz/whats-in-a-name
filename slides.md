@@ -5,7 +5,7 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: /hi-my-name-is.jpg
 # some information about your slides, markdown enabled
-title: Welcome to Slidev
+title: Our name is what now?
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -22,32 +22,24 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
+download: true
 ---
 
 <div class="bg-gray-900 bg-opacity-30 p-2 rounded-md">
-  <h1 class="text-blue-200">Our name is what?</h1>
+  <h1 class="text-blue-200">Our name is <i>what</i> now?</h1>
 
   <h3 class="text-green-300">The Sim Slidies on P-names</h3>
 </div>
 
 ---
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
 # Metodologi
 
 - 📝 **Request For Information** - Ane forespurte teamnavn
-- 🧠 **Brainstorming** - Initielt med teamet og tok helt av alene
+- 🧠 **Brainstorming** - Initielt med teamet og *tok helt av* alene
 - 📤 **Shaping** - Gruppering etter type navn og tilhørende beskrivelse/slogan
 - 🤖 **Name Retrospective** - Review av forslag, må ha mer beskrivelser og tydeligere kravspesifikasjon. Forslag om litt mer wildcards og lekenhet.
 - 🎉 **Name Review** - Presentasjon av forslag
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
 
 <style>
 h1 {
@@ -66,7 +58,6 @@ Here is another comment.
 -->
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -117,11 +108,12 @@ Hvilket dyr kunne vi vært?
   image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/532ac8fa-5d42-4cd0-823a-13c07e3a7350/dfum52o-bc984501-a741-4402-8cd2-99bbd361317b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUzMmFjOGZhLTVkNDItNGNkMC04MjNhLTEzYzA3ZTNhNzM1MFwvZGZ1bTUyby1iYzk4NDUwMS1hNzQxLTQ0MDItOGNkMi05OWJiZDM2MTMxN2IuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gnf6zud7Z66_7nPGBZ5PYSreQmKA-5wmAXJsuhIXZBQ"
 />
 
-<PictureCard v-click title="Possum" image="https://j.gifs.com/VArv5O.gif" description="The (o)Possum stays in one area as long as there is food and water, and favor dark, secure areas. Can play possum to avoid uncomfortable situations." />
+<PictureCard v-click title="Possum" image="https://j.gifs.com/VArv5O.gif" description="The (o)Possum stays in one area as long as there is food and water, and favor dark, secure areas. Can play possum to avoid uncomfortable situations." tag="Resourcefulness" />
 
 </div>
 
 ---
+transition: slide-up
 layout: image-right
 image: https://miro.medium.com/v2/resize:fit:1400/1*9uuSCTtam462aYwDSeQECg.jpeg
 ---
@@ -138,6 +130,7 @@ image: https://miro.medium.com/v2/resize:fit:1400/1*9uuSCTtam462aYwDSeQECg.jpeg
 </ul>
 
 ---
+transition: slide-up
 layout: image-left
 image: https://oldworldgods.com/wp-content/uploads/2023/11/pegasus1.jpg
 ---
@@ -245,7 +238,7 @@ image: https://qph.cf2.quoracdn.net/main-qimg-6e67a770e4e9948a1d1398da6ce0ed94
 <div class="p-2 pt-0 -mt-4">
 ```mermaid
 mindmap
-  id((🏷️ Name <br /> Suggestons))
+  id((💭 Name <br /> Suggestons))
     (🐙 Animals)
       Podengo
       Platypus
@@ -261,11 +254,11 @@ mindmap
       Poseidon
       Pele
       Pangu
-    (💭 Concepts)
+    (💡 Innovation)
       Pioneer
       Pathfinder
       Pulse
-      Pathfinder
+      Paradox
 ```
 </div>
 
@@ -288,4 +281,13 @@ AKA: Ordbok for å forstå meg bedre på mandag.
   <WordCard word="Ketta" translation="Kiler. 'Ikkje kett me!!!'" />
   <WordCard word="Bleinkje" translation="Blinke. 'Sjå, den både bleinkje og skin!'" />
   <Youtube id="lczN213021Y" class="aspect-video w-full rounded-md" />
+</div>
+
+---
+
+# Takkj å takkj
+
+<div class="flex flex-col items-center justify-center gap-4 h-full">
+  <h2>Scan QR-koden for å lagre slides :)</h2>
+  <img v-click src="/whats-in-a-name-qr.png" height="200" width="200" />
 </div>
