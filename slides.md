@@ -238,7 +238,7 @@ image: https://qph.cf2.quoracdn.net/main-qimg-6e67a770e4e9948a1d1398da6ce0ed94
 <div class="p-2 pt-0 -mt-4">
 ```mermaid
 mindmap
-  id((💭 Name <br /> Suggestons))
+  id((💭 Name <br /> Suggestions))
     (🐙 Animals)
       Podengo
       Platypus
@@ -274,20 +274,11 @@ AKA: Ordbok for å forstå meg bedre på mandag.
   <WordCard word="Svåltinj/Svolta" translation="Sulten (hankjønn)/Sulten (hokjønn)" />
   <WordCard word="Sykjå, Akjå, Nikjå" translation="17, 18, 19" />
   <WordCard word="E tykkje ta e kjøle" translation="Jeg synes det er ugreit / forferdelig / urimelig /overdrevent / unødvendig" />
-  <WordCard word="Bakels å græt" translation="Vafler med smørgrøt fra Sunndal" />
+  <WordCard word="Bakels å græt" translation="Vafler med smørgrøt eller rømmegrøt" />
   <WordCard word="Hæmbakakak" translation="Hjemmebakt brød" />
   <WordCard word="Kjøle klar" translation="Veldig sliten" />
   <WordCard word="Farsk" translation="Ugagn. Feks. 'Guten e farskåt!'" />
   <WordCard word="Ketta" translation="Kiler. 'Ikkje kett me!!!'" />
   <WordCard word="Bleinkje" translation="Blinke. 'Sjå, den både bleinkje og skin!'" />
   <Youtube id="lczN213021Y" class="aspect-video w-full rounded-md" />
-</div>
-
----
-
-# Takkj å takkj
-
-<div class="flex flex-col items-center justify-center gap-4 h-full">
-  <h2>Scan QR-koden for å lagre slides :)</h2>
-  <img v-click src="/whats-in-a-name-qr.png" height="200" width="200" />
 </div>
